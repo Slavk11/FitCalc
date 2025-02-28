@@ -12,7 +12,7 @@ func main() {
 		userKg, userHeight := getUserInput()
 		IMT, err := calculateIMT(userKg, userHeight)
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("Не заданы параметры для расчёта")
 			continue
 		}
 		outputResult(IMT)
